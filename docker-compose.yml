@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  mysql:
+    image: mysql:5.7.25
+    env_file: .env 
+    ports:
+      - "3306:3306"
+  wordpress:
+    image: wordpress:5.6.1
+    ports:
+      - "3001:80"
+    depends_on:
+      - mysql
+    env_file: .env 
+    volumes:
+      - ./themes:/var/www/html/wp-content/themes
