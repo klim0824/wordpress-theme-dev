@@ -14,7 +14,7 @@
     <meta property="og:local" content="<?php bloginfo( 'language' ); ?>">
     <meta property="og:url" content="<?php echo get_pagenum_link(get_query_var('page')); ?>">
     <meta property="og:site_name" content="<?php bloginfo( 'name' ); ?>">
-	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.png">
+	<link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico">
 	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-touch-icon.png">
 	<link rel="alternate" href="<?php bloginfo( 'rss2_url' ); ?>" type="application/rss+xml" title="RSS">
 	<?php wp_head(); ?>
