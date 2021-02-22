@@ -24,3 +24,18 @@ $ yarn dev   # or $ npm run dev
     - yarn(npm)によるもの
     - こちらでは管理画面は表示できない
     - エディタでphp, sassファイルを編集するとBrouserSyncで自動リロードされる
+
+## FAQ
+### ポート番号変更したい！
+- `docker-compose.yml` と `package.json` の2ファイルを編集する必要あり
+    - `docker-compose.yml` の12行目付近の左側を3001から8888等に変える
+    - 次に、 `package.json` の12行目付近の `proxy` の値を `localhost:8888` に変える
+    - そして、 `package.json` の13行目付近の `port` の値を8889等に変える
+
+### CSSとJavaScriptファイルを直に書きたい！
+− tmpファイル置いておきますね
+    - `themes/original/assets/css/tmp.css`
+    - `themes/original/assets/js/tmp.js`
+
+## Links
+- https://ixkaito.github.io/bathe/
