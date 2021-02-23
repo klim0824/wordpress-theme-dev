@@ -90,7 +90,7 @@ add_action( 'after_setup_theme', function() {
  */
 add_action( 'widgets_init', function() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'bathe' ),
+		'name'          => __( 'Sidebar', 'original' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
