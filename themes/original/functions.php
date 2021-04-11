@@ -107,6 +107,7 @@ add_action( 'wp_enqueue_scripts', function() {
 
 	wp_enqueue_style( 'wp-main', get_theme_file_uri( 'assets/css/main.css' ) );
 	wp_enqueue_style( 'wp-tmp', get_theme_file_uri( 'assets/css/tmp.css' ) );
+	wp_enqueue_script( 'wp-jquery', get_theme_file_uri( 'assets/js/lib/jquery3.5.1.min.js' ), array(), null, true );
 	wp_enqueue_script( 'wp-main', get_theme_file_uri( 'assets/js/bundle.js' ), array(), null, true );
 	wp_enqueue_script( 'wp-tmp', get_theme_file_uri( 'assets/js/tmp.js' ), array(), null, true );
 
